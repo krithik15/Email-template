@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Email Template</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    .main {
+      margin-top: 10%;
+      margin-bottom: 10%;
+      width: 100%;
+      background-color: #f2f2f2;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .hero {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+    .hero img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .hero h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .hero p {
+      color: #555;
+      font-size: 14px;
+      margin: 4px 0 20px;
+    }
+    .main-image {
+      background-color: #187bb7;
+      text-align: center;
+    }
+    .main-image img {
+      width: 120px;
+      padding: 30px;
+    }
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .content p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .button {
+      margin: 20px 0;
+    }
+    .button a {
+      background-color: #e25c3e;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .features {
+      padding: 0 20px 20px;
+    }
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 15px;
+    }
+    .feature img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .feature div {
+      font-size: 14px;
+      color: #333;
+    }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+    .footer a {
+      color: #187bb7;
+      text-decoration: none;
+    }
+    .social-icons {
+      margin: 15px 0;
+    }
+    .social-icons img {
+      width: 40px;
+      margin: 0 5px;
+    }
+
+    /* Responsive */
+    @media only screen and (max-width: 660px) {
+      .container {
+        width: 100% !important;
+        border-radius: 0;
+      }
+      .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .feature img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table class="main" width="100%">
+    <tr>
+      <td>
+        <table class="container" width="650">
+          <tr>
+            <td class="hero">
+              <img src="img.png" alt="Logo">
+              <h1>Get this responsive email template</h1>
+              <p>Available on GitHub and CodePen</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="main-image">
+              <img src="img.png" alt="Main Image">
+            </td>
+          </tr>
+          <tr>
+            <td class="content">
+              <p>More than 50% of total email opens occurred on a mobile device — a mobile-friendly design is a must for email campaigns.</p>
+              <div class="button">
+                <a href="#">Get the template</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="features">
+              <div class="feature">
+                <img src="img.png" alt="Icon">
+                <div><strong>Highly compatible</strong><br>Tested on the most popular email clients for web, desktop and mobile. Checklist included.</div>
+              </div>
+              <div class="feature">
+                <img src="img.png" alt="Icon">
+                <div><strong>Designer friendly</strong><br>Sketch app resource file and a bunch of social media icons are also included in GitHub repository.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="content">
+              <p>Have a question?<br><a href="mailto:support@ourteam.com">support@ourteam.com</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="footer">
+              <div class="social-icons">
+                <img src="social.png" alt="Facebook">
+                <img src="facebook.png" alt="Twitter">
+                <img src="instagram.png" alt="Google+">
+                <img src="twitter.png" alt="Instagram">
+              </div>
+              <p>This email template was sent to you because we want to make the world a better place. You could change your <a href="#">subscription settings</a> anytime.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
